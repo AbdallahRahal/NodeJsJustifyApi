@@ -9,7 +9,7 @@ app.use(express.json())
 app.all("/api/justify", justify);
 app.all("/api/token", token);
 app.all("/api", (req, res) => res.send("Welcome to the Justify API!"));
-app.all("*", (req, res) => res.send("Error : You've tried reaching a route that doesn't exist."));
+app.all("*", (req, res) => res.send("Error : You've tried reaching a route that doesn't exist. try https://node-js-justify-api.vercel.app/api"));
 
 app.listen(8080, () => {
     console.log('Serveur à l\'écoute sur le port 8080')
